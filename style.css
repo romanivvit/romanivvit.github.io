@@ -123,7 +123,19 @@ body{
 .endtext h3{
   font-size: 20px;
 }
-
+.comment{
+  font-size: 124px;
+  position: absolute;
+  top: -95px;
+  transform: translateX(30%);
+}
+.comment-text{
+  color: #fff;
+  font-family: 'Pacifico', cursive;
+  position: absolute;
+  transform: translateX(-120%) translateY(140%);
+  font-size: 28px;
+}
 .joke{
   display: none;
   position: absolute;

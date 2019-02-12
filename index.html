@@ -19,7 +19,7 @@
         <span class="title">Нажми на мене</span>
       </span>
       <div class="endtext">
-        <span class="close" title="Restart"><i class="fa fa-times"></i></span>  
+        <span class="close" title="Restart"><i class="fa fa-times"></i><i class="far fa-comment comment"><span class="comment-text">Клікай</span></i></span>  
         <h1>Я тебе люблю сонце</h1>
         <h2>Be my valentine?</h2>
         <h3>~Вітасік</h3>
@@ -42,6 +42,10 @@
     $('.container').removeClass('open');
     setTimeout(function(){
     $(".joke").css("display","block");
+    $(".title").css("font-size","30px","top","50%","left","55%");
+    $(".title").css("top","50%","left","54%");
+    $(".title").css("left","55%");
+    $(".title").html("Так ти хочеш значить мою валентинку");
   },1400);
   });
 });
