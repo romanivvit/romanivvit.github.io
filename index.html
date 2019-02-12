@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Valentine Day</title>
+    <link rel="icon" href="love.png">
+</head>
+<body>
+    <!-- Happy Valentines day Codepen! -->
+<div class="bgoverlay">
+    <div class="container">
+      <span class="ico">
+        <span class="ico2">
+        </span>
+        <span class="title">Нажми на мене</span>
+      </span>
+      <div class="endtext">
+        <span class="close" title="Restart"><i class="fa fa-times"></i></span>  
+        <h1>Я тебе люблю сонце</h1>
+        <h2>Be my valentine?</h2>
+        <h3>~Вітасік</h3>
+      </div>
+      <div class="joke">
+        <img src="myMorda.jpg" alt="Vitasik">
+      </div>
+    </div>
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+  $('.title').click(function(){
+    $('.container').addClass('open');
+  });
+  $('.close').click(function(){
+    $('.container').removeClass('open');
+    setTimeout(function(){
+    $(".joke").css("display","block");
+  },1400);
+  });
+});
+</script>
+</body>
+</html>
