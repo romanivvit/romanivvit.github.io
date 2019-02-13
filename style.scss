@@ -1292,7 +1292,7 @@ $footer-height: 5rem;
   transform: translateX(100%);
   display: table;
   padding-left: 0;
-  background: white;
+  background: #221E21;
   
   > * {
     display: table-cell;
@@ -1309,6 +1309,9 @@ $footer-height: 5rem;
     -webkit-appearance: none;
     background: transparent;
     border: 1px solid #dedede;
+    position: relative;
+    bottom: 7px;
+    right: 10px;
   }
 }
 
