@@ -611,13 +611,15 @@ html, body {
     font-size: 20px;
     line-height: 0;
     text-decoration: none;
+}.question-btn button:hover{
+    background-color: rgba(103,58,183,0.5);
 }
 .my-answer{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transform: translateY(50%);
+    transform: translateY(30%);
 }
 .face img{
     top: 15%;
