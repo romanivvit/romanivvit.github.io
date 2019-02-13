@@ -38,9 +38,10 @@ $(document).ready(function(){
     $(".took-gift").click(function(){
         $(".answers").fadeOut(1000);
         $(".gift-wrapper").fadeIn(1200);
-        $("body").css("background-image", "inear-gradient( to bottom, #190e14 ,#0d0d4b 30%, #c76075 80%, #e9b64b 95% )");
+        $(".bgoverlay").css("background","none");
+        $("body").css("background-image","inear-gradient(to bottom, #190e14 ,#0d0d4b 30%, #c76075 80%, #e9b64b 95%)");
         $("body").css("background-image","radial-gradient(circle at center bottom, #e9b64b ,#c76075 15%, #0d0d4b 75%, #190e14 90%)");
-        
+        $(".bgoverlay").css("background","none");
     });
   });
   var myhol = document.getElementById("hol");
