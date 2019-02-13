@@ -648,6 +648,12 @@ html, body {
     top: 65%;
     left: 42%;
 }
+@media(min-width: 1880px){
+    .take-gift{
+        top: 55%;
+        left: 44%;
+    }
+}
 .take-gift button{
     width: 250px;
     height: 50px;
