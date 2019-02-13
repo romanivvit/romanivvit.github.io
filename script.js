@@ -5,11 +5,11 @@ $(document).ready(function(){
     $('.close').click(function(){
       $('.container').removeClass('open');
       setTimeout(function(){
-      $(".joke").css("display","block");
-      $(".title").css("font-size","30px","top","50%","left","55%");
-      $(".title").css("top","50%","left","54%");
-      $(".title").css("left","55%");
-      $(".title").html("Так ти хочеш значить мою валентинку");
+      $(".wrapper").css("display","block");
+      $(".ico").css("display","none");
+      $("body").css("display", "flex");
+      $("body").css("justify-content", "center");
+      $("body").css("align-item", "center");
     },1400);
     });
   });
@@ -58,3 +58,5 @@ $(document).ready(function(){
           ct.children[i].style.backgroundColor = randVal(color);
       }    
   },1000);
+
+  

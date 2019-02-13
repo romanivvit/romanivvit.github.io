@@ -1,0 +1,568 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+body{
+  font-family: 'Pacifico', cursive;
+  overflow: hidden;
+  color: #fff;
+}
+.bgoverlay{
+  background: rgb(103,58,183);
+  background: rgba(103,58,183,0.7);
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+.container{
+  position: relative;
+  margin: 120px auto 0 auto;
+  width: 320px;
+}
+.ico{
+  display: block;
+  width: 320px;
+  height: 320px;
+}
+.open .ico{
+  animation: open 4s;
+  transform: scale(10);
+}
+.ico .title{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  margin-left: -95px;
+  margin-top: -73px;
+  line-height: 40px;
+  z-index: 4;
+  font-size: 60px;
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+  cursor: pointer;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+.open .ico .title{
+  opacity: 0;
+  transition: all 0.3s ease;
+  top:-100px;
+}
+.ico:before,
+.ico:after,
+.ico2:before,
+.ico2:after{
+  position: absolute;
+  top:0;
+  left:0;
+}
+.ico:before,
+.ico:after,
+.ico2:before,
+.ico2:after{
+  display: inline-block;
+  font-size: 20em;
+  content: "\f004";
+  color: #ff4081;
+  font-family: "Font Awesome 5 Free";
+  /* text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+.ico2:before,
+.ico2:after{
+  color: #e91e63;
+}
+.ico:before{
+  z-index: 3;
+}
+.ico:after{
+  animation: explode 4s infinite;
+}
+
+
+.ico2:before{
+  animation: explodeSmall 3s infinite;
+}
+.ico2:after{
+  animation: explodeSmall 2s infinite;
+}
+.endtext{
+  opacity:0;
+  position: absolute;
+  top:-100px;
+  width:100%;
+}
+.open .endtext{
+  top:0;
+  opacity: 1;
+  animation: show 5s;
+}
+.endtext .close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+.endtext h1,
+.endtext h2,
+.endtext h3{
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  text-align: center;
+  font-weight: normal;
+}
+.endtext h1{
+  font-size: 50px;
+}
+.endtext h2{
+  font-size: 30px;
+}
+.endtext h3{
+  font-size: 20px;
+}
+.comment{
+  font-size: 124px;
+  position: absolute;
+  top: -95px;
+  transform: translateX(30%);
+}
+.comment-text{
+  color: #fff;
+  font-family: 'Pacifico', cursive;
+  position: absolute;
+  transform: translateX(-120%) translateY(140%);
+  font-size: 28px;
+}
+.joke{
+  display: none;
+  top: -38%;
+}
+.block-center {
+width: 0px;
+height: 0px;
+position: absolute;
+left: 50%;
+animation: hol 3s linear infinite  ;
+}
+
+.block-center div{
+position: absolute;
+width: 60px;
+height: 72px;
+border-radius: 0;
+border-radius: 80% 60% 0 0;
+transform: rotate(-60deg);
+}
+.block-center div:after{
+content: "";
+}
+.block-center div:before{
+content: "";
+position: absolute;
+height: 100%;
+width: 100%;
+background: inherit;
+transform: rotate(118deg);
+border-radius: 50% 80% 0 0;
+left: 19%;
+top: 30%;
+}
+.h{
+position: absolute;
+left: 50%;
+width: 120px;
+height: 120px;
+margin-left: -60px;
+z-index: 1;
+margin-top: -60px;
+animation: h 3s ease infinite alternate;
+}
+.h div:first-child{
+width: 80%;
+height: 100%;
+transform: rotate(-47deg);
+border-radius: 50px 38px 20px 0;
+position: absolute;
+background:#db3a65;
+box-shadow: 10px 0 47px black inset
+}
+.h div:last-child{
+width: 80%;
+height: 100%;
+background:#db3a65;
+transform: rotate(48deg);
+border-radius: 80px 118px 0 163px;
+position: absolute;
+top: 0;
+right: 0;
+box-shadow: -10px 0 47px black inset
+}
+@keyframes hol{
+0%{
+  top: 0px;
+  overflow: hidden;
+  transform: rotateX(0deg) 
+}
+50%{
+ top: 0px;
+ left: 50%;
+ height: 0;
+ width: 0;
+ transform:  translateX(-50% )  
+}
+90%{
+opacity:1
+}
+100%{
+  top: -130px;
+  width: 1500px;
+  height: 700px;
+  transform:  translateX(-50%);
+opacity:0
+}
+}
+@keyframes h{
+0%{
+  transform:scale(.5)
+}
+50%{
+ transform:scale(1.5) 
+}
+100%{
+ transform:scale(.5) 
+}
+}
+
+@keyframes explode {
+    from {
+      transform: scale(1);
+      opacity: 1;
+    }
+    to {
+      transform: scale(1.6);
+      opacity: 0;
+    }
+}
+@keyframes explodeSmall {
+    from {
+      transform: scale(1);
+      opacity: 1;
+    }
+    to {
+      transform: scale(1.2);
+      opacity: 0;
+    }
+}
+
+
+@keyframes open {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(10);
+    }
+}
+
+@keyframes show {
+    from {
+      opacity: 0;
+      top: -100px;
+    }
+    to {
+      opacity: 1;
+      top:0;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+$scale: 1em;
+$bg-color: #0197F6;
+$heart-color: #D67380;
+$border-color: #fff;
+$text-color: #B9C4CE;
+$animation-length: 6s;
+$pop-color: #B9C4CE;
+$pop-distance: 1em;
+$pop-time: .4s;
+
+html, body {
+    height: 100%;
+  }
+
+.wrapper {
+  position: relative;
+  display: none;
+  width: 100%;
+  font-size: $scale;
+  .pops {
+    position: absolute;
+    z-index: -1;
+    height: 20em;
+    width: 80em;
+    top: 0;
+    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .pop {
+    position: absolute;
+    transform: scale(3);
+    opacity: 0;
+    &.first {
+      left: 26em;
+      top: 8em;
+      .circle {
+        animation-delay: $animation-length *.19;
+      }
+      animation-delay: $animation-length *.19;
+    }
+    
+    &.second {
+      left: 50em;
+      top: 8em;
+      .circle {
+        animation-delay: $animation-length *.33;
+      }
+      animation-delay: $animation-length *.33;
+    }
+    
+    &.third {
+      left: 25em;
+      top: 8em;
+      .circle {
+        animation-delay: $animation-length *.45;
+      }
+      animation-delay: $animation-length *.45;
+    }
+    
+    &.fourth {
+      left: 50em;
+      top: 8em;
+      .circle {
+        animation-delay: $animation-length *.48;
+      }
+      animation-delay: $animation-length *.48;
+    }
+  }
+}
+
+.saying {
+  margin: auto;
+  padding: 3em 3em;
+  box-sizing: border-box;
+  border-left: 1em solid $border-color;
+  border-right: 1em solid $border-color;
+  height: 20em;
+  overflow: hidden;
+  display: flex;
+  width: 80em;
+  letter-spacing: 1em;
+  animation: squeeze $animation-length forwards;
+  transition: width 1s;
+  position:relative;
+  span {
+    font-size: 15em;
+    font-family:'Roboto Condensed', sans-serif ;
+    color: $text-color;
+    display: inline-block;
+  }
+  
+  .love {
+    animation: hide .001s $animation-length * .18 forwards;
+  }
+  
+  .you {
+    animation: hide .001s $animation-length * .35 forwards;
+  }
+  
+  .i {
+    animation: hide .001s $animation-length * .5 forwards;
+  }
+
+  .heart {
+    display: inline-block;
+    font-size: 15em;
+    color: $heart-color;
+    opacity: 0;
+    width: 0;
+    margin: auto .2em;
+    animation: heart $animation-length forwards;
+  }
+  
+  .u {
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+    animation: u $animation-length forwards;
+  }
+
+  @keyframes hide {
+    to {
+      position: absolute; 
+      visibility: hidden;
+      width: 0;
+      height: 0;
+      margin: 0 !important;
+    }
+  }
+  
+  @keyframes u {
+    35%,50.5%,100% {
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+    }
+    36%,50%{
+      visibility: visible;
+      position: relative;
+      opacity: 1;
+    }
+    
+  }
+  
+  @keyframes heart {
+    0%, 17.5% {
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+      width: 0;
+    }
+    
+    18%{
+      position: relative;
+      visibility: visible;
+      opacity: 1;
+      transform: scale(1);
+      width: auto;
+    }
+    
+    20%, 35%, 51%{
+      transform: scale(1.5);
+    }
+    
+    23%, 34%, 38%, 50%, 54%{
+      transform: scale(1);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: scale(1);
+      width: auto;
+    }
+  }
+  
+  @keyframes squeeze {
+    0% {
+      width: 80em;
+      letter-spacing: 2em;
+    }
+    
+    18% {
+      width: 72em;
+      letter-spacing: 1em;
+    }
+    
+    19% {
+      width: 65em;
+      letter-spacing: -.5em;
+    }
+     
+    30%,32% {
+      width: 55em;
+      letter-spacing: -1em;
+    }
+    
+    40%,46%{
+      width: 39em;
+    }
+    
+    55.5%,100% {
+      width: 30em;
+      letter-spacing: -1em;
+    }
+  }
+}
+
+.pop {
+  width: 10em;
+  height: 10em;
+  border: .2em solid $pop-color;
+  border-radius: 50%;
+  animation: pop $pop-time cubic-bezier(0.64, 0.57, 0.67, 1.53) forwards;
+  position: relative;
+  
+  @keyframes pop {
+    0% {
+      opacity: .25;
+      width: 2em;
+      height: 2em;
+    }
+
+    30% {
+      opacity: 1;
+    }
+
+    60% {
+      opacity: .66;
+      width: 5em;
+      height: 5em;
+      opacity:.25;
+    }
+
+    100% {
+      width: 5em;
+      height: 5em;
+      opacity: 0;
+    }
+  }
+  
+  .circle {
+    width: 1em;
+    height: 1em; 
+    border-radius: 50%;
+    background-color: $pop-color;
+    position: absolute;
+    
+    @for $j from 1 through 10 {
+      $i: $j * 45;
+
+      &.out-#{$i} {
+        animation: out-#{$i} $pop-time - .1 cubic-bezier(0.64, 0.57, 0.67, 1.53) forwards;
+      }
+      @keyframes out-#{$i} {
+        from {
+          @if $i > 0 and $i <= 180 {
+            right: -2em;
+          }@else{
+            left: -2em;
+          }
+
+          @if $i > 90 and $i <= 270 {
+            bottom: -2em;
+          }@else{
+            top: -2em;
+          }
+
+        }
+
+        to {
+          width: .3em;
+          height: .3em; 
+          opacity: 0;
+          @if $i > 0 and $i <= 180 {
+            right: -2em - $pop-distance;
+          }@else{
+            left: -2em - $pop-distance;
+          }
+
+          @if $i > 90 and $i <= 270 {
+            bottom: -2em - $pop-distance;
+          }@else{
+            top: -2em - $pop-distance;
+          }
+        }
+      }
+    }
+  }
+}
+
