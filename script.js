@@ -5,12 +5,22 @@ $(document).ready(function(){
     $('.close').click(function(){
       $('.container').removeClass('open');
       setTimeout(function(){
-      $(".wrapper").css("display","block");
+      $(".wrapper").css("display","flex");
+      $(".wrapper").css("flex-direction","column");
       $(".ico").css("display","none");
       $("body").css("display", "flex");
       $("body").css("justify-content", "center");
       $("body").css("align-item", "center");
-    },1400);
+    },100);
+    setTimeout(function(){
+        $(".next").fadeIn(1200);
+    },4000);
+    });
+    $(".next").click(function(){
+        $(".wrapper").fadeOut(1000);
+        setTimeout(function(){
+            $(".question").fadeIn(1200);
+        },1000);
     });
   });
   var myhol = document.getElementById("hol");
@@ -57,6 +67,7 @@ $(document).ready(function(){
       for(i = 0 ; i < ct.children.length ; i++){
           ct.children[i].style.backgroundColor = randVal(color);
       }    
-  },1000);
+  },3000);
+
 
   

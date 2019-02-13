@@ -100,6 +100,7 @@ body{
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 999;
   cursor: pointer;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
@@ -565,4 +566,30 @@ html, body {
     }
   }
 }
-
+.button-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+}
+.next{
+    width: 180px;
+    height: 50px;
+    font-family: 'Pacifico', cursive;
+    font-size: 23px;
+    background-color: transparent;
+    border: 3px solid rgba(103,58,183,1);
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+.next:hover{
+    background-color: rgba(103,58,183,0.5);
+}
+.question{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
