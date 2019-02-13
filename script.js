@@ -44,6 +44,7 @@ $(document).ready(function(){
     });
     $(".fa-gift").click(function(){
         $(".netflix").fadeIn(1200);
+        $(".fa-gift").fadeOut(2000);
     });
   });
   var myhol = document.getElementById("hol");

@@ -1088,6 +1088,49 @@ div#sea {
     cursor: pointer;
     color: #ffa3a3;
 }
+.fa-gift {
+    width: 100px;
+    height: 90px;
+    background-color: #fff;
+    border-radius:5px;
+    box-shadow:0 10px 0 #c9d6e0, 0 12px 0 #aabbc8;
+    position: absolute;
+    margin:auto;
+    bottom: -100px;
+    left: 85px;
+    &:after, &:before {
+      content:'';
+      position: absolute;
+      width: 10px;
+      height:101px;
+      left: 50%;
+      margin-left: -5px;
+      background-color: #f3867f;
+    }
+    &:before{
+      height: 100px;
+      
+      transform:rotate(90deg);
+    }
+    
+  }
+  .fa-gift i {
+      width: 40px;
+      height: 30px;
+      border:10px solid #f3867f;
+      position: absolute;
+      top: 50%;
+      margin-top: -23px;
+      left: 50%;
+      border-radius:100% 20px 20px 30%;
+      box-shadow:0 3px 0 rgba(0,0,0,0.3);
+    &:last-child{
+      transform:rotateY(180deg);
+      left: auto;
+      right: 50%;
+    }
+  }
+  
 @import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
 $button-width: 100px;
 $button-height: 50px;
