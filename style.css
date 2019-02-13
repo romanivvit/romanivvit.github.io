@@ -142,6 +142,108 @@ body{
   top: -38%;
   left: -90%;
 }
+.block-center {
+width: 0px;
+height: 0px;
+position: absolute;
+left: 50%;
+animation: hol 3s linear infinite  ;
+}
+
+.block-center div{
+position: absolute;
+width: 60px;
+height: 72px;
+border-radius: 0;
+border-radius: 80% 60% 0 0;
+transform: rotate(-60deg);
+}
+.block-center div:after{
+content: "";
+}
+
+.block-center div:before{
+content: "";
+position: absolute;
+height: 100%;
+width: 100%;
+background: inherit;
+transform: rotate(118deg);
+border-radius: 50% 80% 0 0;
+left: 19%;
+top: 30%;
+}
+
+.h{
+position: absolute;
+left: 50%;
+width: 120px;
+height: 120px;
+margin-left: -60px;
+z-index: 1;
+margin-top: -60px;
+animation: h 3s ease infinite alternate;
+}
+.h div:first-child{
+width: 80%;
+height: 100%;
+transform: rotate(-47deg);
+border-radius: 50px 38px 20px 0;
+position: absolute;
+background:#db3a65;
+box-shadow: 10px 0 47px black inset
+}
+.h div:last-child{
+width: 80%;
+height: 100%;
+background:#db3a65;
+transform: rotate(48deg);
+border-radius: 80px 118px 0 163px;
+position: absolute;
+top: 0;
+right: 0;
+box-shadow: -10px 0 47px black inset
+}
+
+
+@keyframes hol{
+0%{
+  top: 0px;
+  overflow: hidden;
+  transform: rotateX(0deg) 
+}
+50%{
+ top: 0px;
+ left: 50%;
+ height: 0;
+ width: 0;
+ transform:  translateX(-50% )  
+}
+90%{
+opacity:1
+}
+100%{
+  top: -130px;
+  width: 1000px;
+  height: 500px;
+  transform:  translateX(-50%);
+opacity:0
+}
+
+}
+
+@keyframes h{
+0%{
+  transform:scale(.5)
+}
+50%{
+ transform:scale(1.5) 
+}
+100%{
+ transform:scale(.5) 
+}
+}
+
 @keyframes explode {
     from {
       transform: scale(1);

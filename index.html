@@ -20,9 +20,15 @@
       </span>
       <div class="endtext">
         <span class="close" title="Restart"><i class="fa fa-times"></i><i class="far fa-comment comment"><span class="comment-text">Клікай</span></i></span>  
-        <h1>Я тебе люблю сонце</h1>
+        <h1>I love you</h1>
         <h2>Be my valentine?</h2>
         <h3>~Вітасік</h3>
+        <div class="box-bottom">
+          <div class="hol" id="hol">    
+            <div id="center" class="block-center"></div>
+          </div>
+        </div>
+         
       </div>
       <div class="joke">
         <img src="myMorda.jpg" alt="Vitasik">
@@ -33,22 +39,7 @@
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
-  <script>
-  $(document).ready(function(){
-  $('.title').click(function(){
-    $('.container').addClass('open');
-  });
-  $('.close').click(function(){
-    $('.container').removeClass('open');
-    setTimeout(function(){
-    $(".joke").css("display","block");
-    $(".title").css("font-size","30px","top","50%","left","55%");
-    $(".title").css("top","50%","left","54%");
-    $(".title").css("left","55%");
-    $(".title").html("Так ти хочеш значить мою валентинку");
-  },1400);
-  });
-});
+<script src="script.js"></script> 
 </script>
 </body>
 </html>
