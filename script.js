@@ -42,6 +42,9 @@ $(document).ready(function(){
         $("body").css("background-image","inear-gradient(to bottom, #190e14 ,#0d0d4b 30%, #c76075 80%, #e9b64b 95%)");
         $("body").css("background-image","radial-gradient(circle at center bottom, #e9b64b ,#c76075 15%, #0d0d4b 75%, #190e14 90%)");
     });
+    $(".fa-gift").click(function(){
+        $(".netflix").fadeIn(1200);
+    });
   });
   var myhol = document.getElementById("hol");
   function randVal(myVal, other){ 
@@ -360,6 +363,7 @@ window.onload=function(){
     } 
     if(step===4){
         reveal();
+        $(".fa-gift").fadeIn(1400);
        return;
     }     
     setTimeout(openBox,stepMinutes[step-1]);
@@ -383,11 +387,6 @@ function reveal() {
     w = 255; h = 155;
   }
   $("#video").show();
-//   var ifrm = document.createElement("iframe");
-//         ifrm.setAttribute("src", "https://www.youtube.com/embed/KDxJlW6cxRk?controls=0&loop=1&autoplay=1");
-//         //ifrm.style.width = `${w}px`;
-//         //ifrm.style.height = `${h}px`;
-//         ifrm.style.border = 'none';
-//         document.querySelector('#video').appendChild(ifrm);
+
 }
   
